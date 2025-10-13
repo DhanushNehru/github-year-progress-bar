@@ -14,7 +14,6 @@ app.get("/year-progress", (req, res) => {
 
   const lang = req.query.lang || "en";
   
-
   let start = startDateParam
     ? new Date(startDateParam)
     : new Date(now.getFullYear(), 0, 1);
